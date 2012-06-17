@@ -73,12 +73,3 @@ var GeoPositioning = function() {
 		return this.error;
 	}
 }
-
-var geo = new GeoPositioning(10);
-geo.init();
-geo.startWatching(handler);
-
-function handler(lat, lon) {
-	alert("hello " + lat + " - " + lon );
-	geo.stopWatching();
-}
